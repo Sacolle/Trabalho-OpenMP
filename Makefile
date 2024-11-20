@@ -1,7 +1,7 @@
 COMPILER=gcc
 
 # Flags
-CFLAGS=-O3 -Wall -std=gnu11 -pedantic -lm
+CFLAGS=-O3 -Wall -std=gnu11 -pedantic -lm -g
 
 # Files to compile
 OBJECTS=est_matriz_seq.c
@@ -13,7 +13,7 @@ EXE=est_matriz_seq
 all: $(OBJECTS)
 	$(COMPILER) $(OBJECTS) $(CFLAGS) -o $(EXE)
 
-run:
+run: 
 	./$(EXE)
 
 clean:
