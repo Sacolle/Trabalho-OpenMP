@@ -9,7 +9,7 @@ threads=(1 2 4 8 12 16 32)
 # Compile the programs
 gcc original.c -o original -lm
 gcc otimizado.c -o otimizado -lm
-#gcc paralelo.c -o paralelo -fopenmp -lm
+gcc paralelo.c -o paralelo -fopenmp -lm
 
 # Create a results folder
 mkdir -p results
@@ -27,16 +27,16 @@ for input in "${inputs[@]}"; do
     { time ./otimizado < "$input" > /dev/null; } 2>> "results/otimizado_$input.log"
 
     # Benchmark paralelo.c
-   echo "Benchmarking paralelo.c with $input (various threads)..."
+    echo "Benchmarking paralelo.c with $input (various threads)..."
     
-    Without specifying threads (default behavior)
+    # Without specifying threads (default behavior)
     echo "Default thread count:" >> "results/paralelo_$input.log"
     { time ./paralelo < "$input" > /dev/null; } 2>> "results/paralelo_$input.log"
 
     # With specified thread counts
     for t in "${threads[@]}"; do
         echo "Threads: $t" >> "results/paralelo_$input.log"
-        OMP_NUM_THREADS=$t { time ./paralelo < "$input" > /dev/null; } 2>> "results/paralelo_$input.log"
+        OMP_NUM_THREADS=$t bash -c "{ time ./paralelo < \"$input\" > /dev/null; } 2>> \"results/paralelo_$input.log\""
     done
 done
 
