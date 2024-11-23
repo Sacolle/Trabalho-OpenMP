@@ -1,17 +1,17 @@
 COMPILER=gcc
 
 # Flags
-CFLAGS=-O3 -Wall -std=gnu11 -pedantic -lm -g
+CFLAGS=-O3 -Wall -std=gnu11 -pedantic -lm -fopenmp
 
 # Files to compile
-OBJECTS=est_matriz_seq.c
-
-# Executable name
-EXE=est_matriz_seq
+OBJECTS=est_matriz_seq_original.c
 
 
-all: $(OBJECTS)
-	$(COMPILER) $(OBJECTS) $(CFLAGS) -o $(EXE)
+% : %.c
+	$(COMPILER) $< $(CFLAGS) -o $@
+
+#all: $(OBJECTS)
+# $(COMPILER) $(OBJECTS) $(CFLAGS) -o $(EXE)
 
 run: 
 	./$(EXE)
