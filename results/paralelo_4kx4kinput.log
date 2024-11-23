@@ -1,0 +1,40 @@
+Default thread count:
+
+real	3m56.741s
+user	3m57.614s
+sys	0m0.112s
+Threads: 1
+
+real	3m57.523s
+user	3m57.369s
+sys	0m0.128s
+Threads: 2
+
+real	3m57.687s
+user	3m58.154s
+sys	0m0.128s
+Threads: 4
+
+real	3m56.544s
+user	3m57.070s
+sys	0m0.184s
+Threads: 8
+
+real	3m57.528s
+user	3m58.111s
+sys	0m0.104s
+Threads: 12
+
+real	3m57.125s
+user	3m57.741s
+sys	0m0.096s
+Threads: 16
+
+real	3m56.994s
+user	3m57.650s
+sys	0m0.100s
+Threads: 32
+
+real	3m57.005s
+user	3m57.796s
+sys	0m0.100s

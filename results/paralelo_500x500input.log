@@ -1,0 +1,88 @@
+Default thread count:
+./bench.sh: line 34: ./paralelo: No such file or directory
+
+real	0m0.002s
+user	0m0.001s
+sys	0m0.000s
+Threads: 1
+bash: line 1: ./paralelo: No such file or directory
+
+real	0m0.002s
+user	0m0.001s
+sys	0m0.000s
+Threads: 2
+bash: line 1: ./paralelo: No such file or directory
+
+real	0m0.002s
+user	0m0.001s
+sys	0m0.000s
+Threads: 4
+bash: line 1: ./paralelo: No such file or directory
+
+real	0m0.002s
+user	0m0.001s
+sys	0m0.000s
+Threads: 8
+bash: line 1: ./paralelo: No such file or directory
+
+real	0m0.002s
+user	0m0.001s
+sys	0m0.000s
+Threads: 12
+bash: line 1: ./paralelo: No such file or directory
+
+real	0m0.002s
+user	0m0.001s
+sys	0m0.000s
+Threads: 16
+bash: line 1: ./paralelo: No such file or directory
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.001s
+Threads: 32
+bash: line 1: ./paralelo: No such file or directory
+
+real	0m0.002s
+user	0m0.001s
+sys	0m0.000s
+Default thread count:
+
+real	0m0.566s
+user	0m0.866s
+sys	0m0.000s
+Threads: 1
+
+real	0m0.572s
+user	0m0.564s
+sys	0m0.008s
+Threads: 2
+
+real	0m0.555s
+user	0m0.569s
+sys	0m0.000s
+Threads: 4
+
+real	0m0.552s
+user	0m0.577s
+sys	0m0.000s
+Threads: 8
+
+real	0m0.541s
+user	0m0.585s
+sys	0m0.004s
+Threads: 12
+
+real	0m0.546s
+user	0m0.615s
+sys	0m0.004s
+Threads: 16
+
+real	0m0.548s
+user	0m0.639s
+sys	0m0.004s
+Threads: 32
+
+real	0m0.546s
+user	0m0.768s
+sys	0m0.005s
